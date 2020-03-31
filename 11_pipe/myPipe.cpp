@@ -26,10 +26,6 @@ int main(int argc, char *argv[])
         close(pipeWrite);
         execlp("grep", "grep", "bash", "--color=auto", NULL);
     }
-
-    close(pipeWrite);
-    close(pipeRead);
-
-    printf("pipeWrite = %d,  pipeRead = %d\n", pipeWrite, pipeRead);
+    
     return 0;
 }
