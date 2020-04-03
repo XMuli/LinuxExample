@@ -1,6 +1,6 @@
 # LinuxExample
 
-Unix / Linux Example
+`Linux / Unix` Example：文章中的所有例子均在 MacOS / UOS 上面编译成功。
 
 <br>
 
@@ -10,7 +10,9 @@ Unix / Linux Example
 
 <br>
 
-### 目录：
+## 目录：
+
+### 服务器开发之 Linux 基础编程：
 
 #### gcc/g++:
 
@@ -30,11 +32,22 @@ Unix / Linux Example
 
 
 
-#### 程序运行原理，文件描述符：
+#### 程序运行原理，文件描述符，PCB：
 
-- [Linux中根目录结构和常用文件、文件夹的操作命令](https://blog.csdn.net/qq_33154343/article/details/105010222)
-
+- [Linux中文件操作，软硬链接ln，用户权限chmod、chown，文件查找和检索find、grep，压缩gz，bz2](https://blog.csdn.net/qq_33154343/article/details/105010222)
 - [Linux中虚拟地址空间、pcb、文件描述符、C库函数工作流程、标准库和系统库函数区别](https://blog.csdn.net/qq_33154343/article/details/105029261)
 - [Linux中man手册，阻塞和非阻塞，stat，文件操作和遍历，文件描述符复制dup()](https://blog.csdn.net/qq_33154343/article/details/105031987)
-- 
+
+
+
+
+
+### 服务器开发之 Linux 系统编程：
+
+#### 进程间通信：
+
+- [Linux中fork创建兄弟子进程，验证进程之间全局变量不共享，exec函数族](https://blog.csdn.net/qq_33154343/article/details/105157044)
+- [Linux中孤儿进程，僵尸进程，进程回收wait、waitpid函数](https://blog.csdn.net/qq_33154343/article/details/105164215)
+- [父子进程、兄弟子进程之间通信方式--匿名管道pipe(适用于有血缘关系的进程)](https://blog.csdn.net/qq_33154343/article/details/105254078)
+- [无血缘关系的进程间通信方式--有名管道fifo](https://blog.csdn.net/qq_33154343/article/details/105266919)
 
