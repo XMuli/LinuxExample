@@ -14,13 +14,27 @@ int main(int argc, char *argv[])
         pthread_create(&(id[i]), NULL, myfun, p);
         printf("i = %d, thread id: %ld\n", i, id[i]);
     }
+
+    // pthread_exit(nullptr);  //终止主线程
+    int j = 0;
+    while (true) {
+        sleep(1);
+        printf ("main thread-----%d------\n", j++);
+    }
     
-    sleep(2);
     return 0;
 }
 
 void* myfun(void* arg)
 {
-    printf("num = %d, child thread id: %ld\n", (*((int *)arg))++, pthread_self());
-    return NULL;
+    for (int i = 0; i < 5; i++) {
+        printf ("child thread-----%d------\n", i);
+
+        if (i == 2) {
+             _exit(0); //退出进程
+            // pthread_exit(nullptr);  //终止主线程
+        }        
+    }
+
+    return nullptr;
 }
