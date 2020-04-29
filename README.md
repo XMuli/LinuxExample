@@ -14,7 +14,7 @@
 
 ### 服务器开发之 Linux 基础编程：
 
-#### gcc/g++:
+##### gcc/g++:
 
 - [在MacOS上面通过brew命令安装gcc编译器集](https://blog.csdn.net/qq_33154343/article/details/104639656) 
 - [gcc和g++的区别，编译.c和.cpp文件的区别](https://blog.csdn.net/qq_33154343/article/details/104645129) 
@@ -25,14 +25,14 @@
 
 
 
-#### gdb:
+##### gdb:
 
 - [ 在MacOS10.14.6安装最新gdb8.3的详细教程，含可能遇到的所有坑(网上最新教程)](https://blog.csdn.net/qq_33154343/article/details/104784641)
 - [gdb调试器的使用，初探全貌](https://blog.csdn.net/qq_33154343/article/details/104904798)
 
 
 
-#### 程序运行原理，文件描述符，PCB：
+##### 程序运行原理，文件描述符，PCB：
 
 - [Linux中文件操作，软硬链接ln，用户权限chmod、chown，文件查找和检索find、grep，压缩gz，bz2](https://blog.csdn.net/qq_33154343/article/details/105010222)
 - [Linux中虚拟地址空间、pcb、文件描述符、C库函数工作流程、标准库和系统库函数区别](https://blog.csdn.net/qq_33154343/article/details/105029261)
@@ -44,10 +44,28 @@
 
 ### 服务器开发之 Linux 系统编程：
 
-#### 进程间通信：
+##### 进程间通信：
 
 - [Linux中fork创建兄弟子进程，验证进程之间全局变量不共享，exec函数族](https://blog.csdn.net/qq_33154343/article/details/105157044)
 - [Linux中孤儿进程，僵尸进程，进程回收wait、waitpid函数](https://blog.csdn.net/qq_33154343/article/details/105164215)
 - [父子进程、兄弟子进程之间通信方式--匿名管道pipe(适用于有血缘关系的进程)](https://blog.csdn.net/qq_33154343/article/details/105254078)
-- [无血缘关系的进程间通信方式--有名管道fifo](https://blog.csdn.net/qq_33154343/article/details/105266919)
+- [Linux中普通的进程间通信方式--有名管道fifo(适用于无血缘关系的进程)](https://xmuli.blog.csdn.net/article/details/105266919) 
+- [Linux中进程间的通信方式--内存映射区mmap()](https://xmuli.blog.csdn.net/article/details/105322927) 
+
+
+
+##### 信号和守护进程：
+
+- [Linux中系统信号初识，和函数kill，raise，abort，alarm，setitimer](https://xmuli.blog.csdn.net/article/details/105357886) 
+- [Linux中未决信号集和阻塞信号集的状态关系sigaddset，以及捕捉信号函数](https://xmuli.blog.csdn.net/article/details/105448914) 
+- [Linux中创建守护进程setsid()](https://xmuli.blog.csdn.net/article/details/105453850)
+
+
+
+##### 多线程：
+
+- [Linux中创建多线程实例pthread_create()](https://xmuli.blog.csdn.net/article/details/105546234) 
+- [Linux中多线程操作函数pthread_exit()、pthread_jion()、pthread_detach()、pthread_cancel()](https://xmuli.blog.csdn.net/article/details/105620043) 
+- [Linux中使用使用互斥量(锁)Mutex来操持多线程同步执行pthread_mutex_lock()](https://xmuli.blog.csdn.net/article/details/105779111) 
+- [Linux中原子操作，死锁原因以及解决方法，读写锁的属性和函数使用pthread_rwlock_wrlock()](https://xmuli.blog.csdn.net/article/details/105800949) 
 
